@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ import Featured from './Featured';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="container">
         <Header />
         <Switch>
@@ -28,7 +28,7 @@ function App() {
           <Route component={ NotFound } />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
